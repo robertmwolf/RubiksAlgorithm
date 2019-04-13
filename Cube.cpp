@@ -29,7 +29,9 @@ void swap(char &a, char &b)
 }
 void rotate_clock(char choice)
 {
+	/*Jacob*/
 	moveSet.push_back(choice);
+	/*End*/
 	if (choice == 'w')
 	{
 		cout << "White" << endl;
