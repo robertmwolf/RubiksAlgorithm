@@ -787,14 +787,36 @@ void yellow_edges_colour_arrangement()
 		rotate_clock('y');
 	}
 }
+
+void count (char thechar){
+
+}
 int main()
 {
+	int redCount = 0;
+	int orangeCount = 0;
+	int yellowCount = 0;
+	int greenCount = 0;
+	int blueCount = 0;
+	int whiteCount= 0;
+
+
 	cout << "________________________| RUBIK'S CUBE SOLVER |________________________" << endl << endl;
 	cout << "Input :" << endl << endl;
 	cout << "White Side : ";
 	for (int i = 0; i < 9; ++i)
 	{
-		cin >> white[i];
+		char in;
+		cin >> in;
+		swtich (in){
+			case ('r'):
+				redCount++;
+				break;
+			case ('o'):
+				redCount++;
+				break;
+		}
+		white[i] = in;
 	}
 	cout << "Red Side : ";
 	for (int i = 0; i < 9; ++i)
